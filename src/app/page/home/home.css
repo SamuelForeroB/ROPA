@@ -1,0 +1,62 @@
+/* ===== HOME ===== */
+.home {
+  margin-top: 70px; /* margen igual a la altura del header fijo */
+}
+
+/* Carrusel */
+.carousel-inner img {
+  width: 100%;          /* ocupa todo el ancho */
+  height: 450px;        /* altura fija */
+  object-fit: cover;    /* recorta sin deformar */
+  border-radius: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);    /* iconos visibles sobre fondo oscuro */
+}
+
+/* Bienvenida */
+.welcome {
+  text-align: center;
+  max-width: 800px;
+  margin: 60px auto 30px;
+}
+
+.welcome h2 span {
+  color: #1c96fa;
+}
+
+.divider {
+  width: 80px;
+  height: 2px;
+  background-color: #1c96fa;
+  border: none;
+  margin: 40px auto;
+}
+
+/* Servicios */
+.services .service-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.services .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.services .service-card i {
+  font-size: 40px;
+  color: #238ce2;
+  margin-bottom: 15px;
+}
+
+/* Ajuste para evitar que el footer se superponga */
+section:last-of-type {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}

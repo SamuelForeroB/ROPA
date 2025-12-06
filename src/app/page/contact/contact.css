@@ -1,0 +1,122 @@
+/* Sección principal */
+.contact-section {
+  background: linear-gradient(135deg, #000000, #ffeef2);
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  background-color: #534848;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-container h2 span {
+  color: #0e9dc9;
+}
+
+.contact-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Campos del formulario */
+.contact-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #1e7de9;
+  box-shadow: 0 0 6px rgb(18, 160, 255);
+  outline: none;
+}
+
+/* Contenedor de botones */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Botones */
+.submit-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #1e7de9;
+}
+
+.submit-btn:hover {
+  background-color: #127ec5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgb(20, 143, 243);
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

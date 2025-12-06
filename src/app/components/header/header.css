@@ -1,0 +1,65 @@
+/* 🎨 HEADER COMPACTO Y ELEGANTE */
+:host ::ng-deep .custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #2e2e2e; /* gris oscuro moderno */
+  padding: 6px 20px; /* 🔹 más corto */
+  border-bottom: 1px solid #444;
+  height: 60px; /* 🔹 altura fija menor */
+  display: flex;
+  align-items: center;
+}
+
+/* 🖋️ Marca principal (logo + texto) */
+:host ::ng-deep .navbar-brand {
+  color: #f5f5f5;
+  font-weight: 700;
+  font-size: 1.2rem; /* 🔹 texto un poco más pequeño */
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+:host ::ng-deep .navbar-brand img {
+  width: 35px; /* 🔹 logo más compacto */
+  height: auto;
+  margin-right: 8px;
+  border-radius: 5px;
+}
+
+:host ::ng-deep .navbar-brand:hover {
+  color: #006eff;
+}
+
+/* 🔠 Enlaces del menú */
+:host ::ng-deep .navbar-nav .nav-link {
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 0.95rem; /* 🔹 texto un poco más pequeño */
+  margin: 0 8px;
+  letter-spacing: 0.4px;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+:host ::ng-deep .navbar-nav .nav-link:hover,
+:host ::ng-deep .navbar-nav .nav-link.active {
+  color: #0066ff;
+}
+
+/* 📱 Responsive */
+@media (max-width: 991px) {
+  :host ::ng-deep .custom-navbar {
+    height: auto;
+    padding: 8px 15px;
+  }
+
+  :host ::ng-deep .navbar-nav .nav-link {
+    margin: 6px 0;
+  }
+}
