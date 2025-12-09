@@ -122,18 +122,20 @@
       <!-- ============================================================
            BOTONES
       ============================================================ -->
-      <div class="button-group">
+      <div class="form-buttons">
         <!-- Botón ENVIAR -->
         <!-- type="submit": activa ngSubmit -->
-        <!-- [disabled]: se deshabilita mientras se procesa o si el formulario es inválido -->
+        <!-- [disabled]: solo se deshabilita mientras se procesa -->
         <button 
           type="submit" 
           class="submit-btn" 
-          [disabled]="submitting || contactForm.invalid">
+          [disabled]="submitting">
           {{ submitting ? 'Enviando...' : 'Enviar Mensaje ✨' }}
         </button>
 
         <!-- Botón CANCELAR -->
+        <!-- type="button": no envía el formulario -->
+        <!-- (click)="cancelar()": limpia todos los campos -->
         <button 
           type="button" 
           class="cancel-btn" 
